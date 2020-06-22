@@ -1,0 +1,129 @@
+@font-face{
+    font-family: "MouseMemories";
+    src: url("../css/MouseMemoirs-Regular.ttf");
+}
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-image: url('../imgs/wallpaper-gamer.jpg');
+  }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+}
+.container span{
+    font-size: 20px;
+    color: #eeeeee;
+    cursor: pointer;
+    width: 40px;
+    height: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.container span:hover{
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: #868686;
+    opacity: 0.9;
+}
+.header{
+    background-color: #262626;
+    width: 100%;
+    height: 70px;
+    border-bottom: 5px solid orange;
+}
+.header img{
+    width: 70px;
+    height: 100%;
+    float: left;
+    background-color: #b4ad9d;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.nav{
+    padding-top: 8px;
+    align-items: center;
+    float: right;
+}
+.nav ul li{
+    display: inline-block;
+    color: #eeeeee;
+}
+.nav ul{
+    padding: 0;
+}
+.nav a{
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 20px;
+}
+.nav a:hover{
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+.titulo{
+    padding-top: 10px;
+    color: #b4ad9d;
+    float: left;
+    margin: auto;
+    cursor: pointer;
+}
+.recomendados{
+    margin-top: 50px;
+    width: 100%;
+    height: 1400px;
+    background-color: #b4ad9d;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+.recomendados h1{
+    padding: 40px;
+    font-size: 40px;
+}
+.para_recomendar{
+    width: 55%;
+    height: 350px;
+    background-color: white;
+    float: left;
+    position: relative;
+    margin-bottom: 50px;
+}
+.para_recomendar p {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.img_rec{
+    width: 35%;
+    height: 350px;
+    float: left;
+    position: relative;
+    margin-bottom: 50px;
+}
+.img_rec img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.footer{
+    background-color: #b4ad9d;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    border-top-left-radius: 30px;
+    line-height: 70px; 
+    margin-top: 50px;
+}
+.footer p{
+    color: black;
+    font-size: 25px;
+}
+
+

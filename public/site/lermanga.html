@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boku no hero Capitulo - 275</title>
+    <link rel="stylesheet" href="css/stylelermanga.css">
+    <script src="../funcoes.js"></script>
+</head>
+<body onload="iniciaSlider()">
+    <div class="header">
+        <div class="container">
+            <div class="img_header">
+                <img src="imgs/iconbook.ico" alt="Logo">
+            </div>
+            <h1 class="titulo"><a href="index.html" style="color: #eeeeee; text-decoration: none;">
+            <b style="color: coral;">Manga</b>Livre</a></h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recomendados.html">Recomendados</a></li>
+                    <li>Bem vindo, <b id="b_usuario"></b></li>
+                    <li><a href="login.html" onclick="logoff()">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="lermanga">
+            <div id="moldura" class="img"></div>
+        </div>
+        <div class="butt">
+            <input id="inp1" type="button" value="<" onclick="voltar()">
+            <p>Página: <span id="result">1</span> de <span id="result2">18</span></p>
+            <input id="inp2" type="button" value=">" onclick="prox()">
+        </div>
+    </div>
+    <div class="div_down">            
+        <div class="img_down">
+            <img src="imgs/download-icon.png" alt="Download">
+        </div>
+        <div class="text_down">
+            <a href="imgs/cap275/cap275.rar" Download><p>Download</p></a>
+        </div>
+    </div>
+    <div class="div_menu_cap">
+        <a href="manga.html">Voltar</a>
+    </div>
+</body>
+
+</html>
+<script>
+    verificar_autenticacao();
+
+    function iniciaSlider() {
+        max = 18;
+        min = 1;
+        fi = min;
+        carregaFoto("imgs/cap275/1.png");
+    }
+    function carregaFoto(foto) {
+        document.getElementById("moldura").style.backgroundImage = "url(" + foto + ")";
+    }
+    function prox() {
+        fi++;
+        if (fi > max) {
+            fi = min;
+        }
+        carregaFoto("imgs/cap275/" + fi + ".png");
+        result.innerHTML = `${fi}`;
+        result2.innerHTML = `${max}`;
+    }
+    function voltar() {
+        fi--;
+        if (fi < min) {
+            fi = max;
+        }
+        carregaFoto("imgs/cap275/" + fi + ".png");
+        result.innerHTML = `${fi}`;
+        result2.innerHTML = `${max}`;
+    }
+</script>

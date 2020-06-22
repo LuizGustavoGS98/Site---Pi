@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela inicial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../funcoes.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="img_header">
+                <img src="imgs/iconbook.ico" alt="Logo">
+            </div>
+            <h1 class="titulo"><a href="index.html" style="color: #eeeeee; text-decoration: none;">
+            <b style="color: coral;">Manga</b>Livre</a></h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recomendados.html">Recomendados</a></li>
+                    <li>Bem vindo, <b id="b_usuario"></b></li>
+                    <li><a href="login.html" onclick="logoff()">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="home">
+        <div class="carrossel">
+            <h1>Mangás em destaque</h1>
+            <section class="galeria">
+                <img src="imgs/myheroacademiawallpaper.jpg" class="foto">
+                <img src="imgs/nhk.jpg" class="foto">
+                <img src="imgs/kimetsu-anime.jpg" class="foto">
+                <img src="imgs/uqholder.jpg" class="foto">
+                <img src="imgs/bleach-anime.png" class="foto">
+            </section>
+        </div>
+    </div>
+    <div class="container">
+        <div class="titulos">
+            <div class="card" id="card1">
+                <p><b>UQHolder</b></p>
+            </div>
+            <div class="card" id="card2">
+                <p><b>Bleach</b></p>
+            </div>
+            <div class="card" id="card3">
+                <p><b>NHK</b></p>
+            </div>
+            <div class="card" id="card4">
+                <p><b>Boku no hero</b></p>
+            </div>
+            <div class="card" id="card5">
+                <p><b>Kimetsu no yaiba</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1></h1>
+        <div class="conteudo">
+            <div id="pag1">
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_boku-no-hero-academia_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="manga.html">Boku no hero</a>
+                        <p>275 Cap</p>
+                        <p>478039 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <a href="lermanga.html"><button>275</button></a>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_noragami_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Noragami</a>
+                        <p>88 Cap</p>
+                        <p>160039 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>88</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_goblin-slayer_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Goblin Slayer</a>
+                        <p>48 Cap</p>
+                        <p>201772 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>48</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_solo-leveling_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Solo Leveling</a>
+                        <p>210 Cap</p>
+                        <p>341600 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>210</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_kimetsu-no-yaiba_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Kimetsu no Yaiba</a>
+                        <p>205 Cap</p>
+                        <p>233300 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>205</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_berserk.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Berserk</a>
+                        <p>360 Cap</p>
+                        <p>310518 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>360</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_black-clover_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Black Clover</a>
+                        <p>254 Cap</p>
+                        <p>328576 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>254</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_bleach-br_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Bleach</a>
+                        <p>686 Cap</p>
+                        <p>680475 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>686</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_one-piece-br_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">One piece</a>
+                        <p>983 Cap</p>
+                        <p>521891 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>983</button>
+                    </div>
+                </div>
+            </div>
+            <div id="pag2" style="display: none;">
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_enennoshouboutai.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Fire Force</a>
+                        <p>217 Cap</p>
+                        <p>80536 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>217</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_nhk.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">NHK</a>
+                        <p>40 Cap</p>
+                        <p>15678 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>40</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_naruto-br_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Naruto</a>
+                        <p>700 Cap</p>
+                        <p>293376 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>700</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/tower_of_god_1.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Tower of god</a>
+                        <p>79 Cap</p>
+                        <p>92292 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>79</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_neverland.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Neverland</a>
+                        <p>181 Cap</p>
+                        <p>128242 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>181</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_haikyuu.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Haikyuu</a>
+                        <p>397 Cap</p>
+                        <p>136398 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>397</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_drstone.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Dr. Stone</a>
+                        <p>154 Cap</p>
+                        <p>113242 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>154</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_tokyo.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Tokyo Ghoul</a>
+                        <p>179 Cap</p>
+                        <p>478039 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>179</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_kaguya.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Kaguya-sama</a>
+                        <p>191 Cap</p>
+                        <p>56877 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>191</button>
+                    </div>
+                </div>
+            </div>
+            <div id="pag3" style="display: none;">
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_akame-ga-kill_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Akame ga kill</a>
+                        <p>78 Cap</p>
+                        <p>164033 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>78</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_ao-no-flag_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Ao no Flag</a>
+                        <p>50 Cap</p>
+                        <p>11470 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>50</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_deadman-wonderland_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Deadman</a>
+                        <p>57 Cap</p>
+                        <p>51669 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>57</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_fairy-tail-br_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Fairy tail</a>
+                        <p>545 Cap</p>
+                        <p>478039 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>545</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_fateapocrypha-novel_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Fate Apocrypha</a>
+                        <p>19 Cap</p>
+                        <p>47803 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>19</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_mato-seihei-no-slave_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Mato Seihei</a>
+                        <p>22 Cap</p>
+                        <p>14780 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>22</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_kekkai-sensen-blood-blockade-battlefront_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Kekkai Sensen</a>
+                        <p>78 Cap</p>
+                        <p>18643 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>78</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_psyren_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Psyren</a>
+                        <p>145 Cap</p>
+                        <p>32661 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>145</button>
+                    </div>
+                </div>
+                <div class="manga">
+                    <div class="img_div">
+                        <img src="imgs/perfilmangas/image_tsugumomo_large.jpg">
+                    </div>
+                    <div class="textos_manga">
+                        <a href="">Tsugumomo</a>
+                        <p>129 Cap</p>
+                        <p>72800 views</p>
+                        <img src="imgs/perfilmangas/estrelas.png" alt="Nota">
+                        <button>129</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span id="pg1" onclick="mudarpag1()">1</span>
+        <span id="pg2" onclick="mudarpag2()">2</span>
+        <span id="pg3" onclick="mudarpag3()">3</span>
+    </div>
+    <div class="container">
+        <div class="footer">
+            <p>©Copyright 2020 - MangaLivre.com.br</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    verificar_autenticacao();
+    function mudarpag1(){
+        pag1.style.display = 'block';
+        pag2.style.display = 'none';
+        pag3.style.display = 'none';
+        pg1.style.textDecoration = 'underline';
+        pg2.style.textDecoration = 'none';
+        pg3.style.textDecoration = 'none';
+    }
+    function mudarpag2(){
+        pag2.style.display = 'block';
+        pag3.style.display = 'none';
+        pag1.style.display = 'none';
+        pg2.style.textDecoration = 'underline';
+        pg3.style.textDecoration = 'none';
+        pg1.style.textDecoration = 'none';
+    }
+    function mudarpag3(){
+        pag3.style.display = 'block';
+        pag2.style.display = 'none';
+        pag1.style.display = 'none';
+        pg3.style.textDecoration = 'underline';
+        pg2.style.textDecoration = 'none';
+        pg1.style.textDecoration = 'none';
+    }
+</script>

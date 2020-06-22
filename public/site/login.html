@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style-login-cad.css" rel="stylesheet">
+    <title>Tela de Login</title>
+</head>
+
+<body background="imgs/manga_home.png">
+    <div class="container">
+        <a class="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
+        <!--FORMULARIO DE LOGIN-->
+        <div class="contentLog">
+            <div id="login">
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    <h1>Login</h1>
+                    <p>
+                        <label for="email_log">E-mail</label>
+                        <input id="email" name="login" type="text" placeholder="ex. mayara_band@hotmail.com" />
+                    </p>
+
+                    <p>
+                        <label for="senha_log">Senha</label>
+                        <input id="senha" name="senha" type="password" placeholder="ex. M987561" />
+                    </p>
+
+                    <button class="button" id="btn_entrar">Logar</button>
+
+                    <div id="result" style="color: brown;"></div>
+
+                    <p class="link">
+                        <a href="telainicial.html">Home</a>
+                        <a href="cadastro.html">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <!-- FIM FORMULARIO DE LOGIN-->
+    </div>
+</body>
+
+</html>
+<script>
+
+    function entrar() {
+        // aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.email; /*Mudar para sua coluna no banco*/
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'index.html';
+                });
+
+            } else {
+                result.innerHTML = 'Erro de login!<br>';
+                if (email.value == "" || senha.value == "") {
+                    result.innerHTML += 'Preencha todos os campos<br>';
+                }
+                else if(!email.value.includes("@")){
+                    result.innerHTML += 'Isso não é um Email';
+                }
+                else {
+                    result.innerHTML += 'Usuário e/ou senha incorretos ou não cadastrados';
+
+                    response.text().then(texto => {
+                        console.error(texto);
+                    });
+                }
+            }
+        });
+
+        return false;
+    }
+
+    // function aguardar() {
+    //     btn_entrar.disabled = true;
+    //     img_aguarde.style.display = 'block';
+    //     div_erro.style.display = 'none';
+    // }
+
+    // function finalizar_aguardar(resposta) {
+    //     btn_entrar.disabled = false;
+    //     img_aguarde.style.display= 'none';
+    //     div_erro.style.display = 'block';
+    //     div_erro.innerHTML = resposta;
+    // }
+
+</script>
